@@ -1,0 +1,265 @@
+/* global style  */
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    font-size: 80px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*  Start  navbar section    */
+
+.navbar-brand {
+    font-size: 60px;
+
+}
+
+.dropdown-menu a {
+    color: white;
+}
+
+/*  End  navbar section    */
+
+/*  Start  gatePage  section    */
+
+.gate {
+    margin-top: 20px;
+    position: relative;
+    height: 761px;
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+.gate .toggler-text {
+
+    font-size: 50px;
+    font-weight: bold;
+    width: fit-content;
+    margin: auto;
+
+
+}
+
+.gate .toggler-text span {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.gate .toggler-text .active {
+    opacity: 1;
+}
+
+.gate .login {
+    margin-top: 20px;
+    width: fit-content;
+    display: none;
+    position: absolute;
+    left: 30%;
+    right: 50%;
+}
+
+.gate .sigin {
+    margin-top: 20px;
+    display: none;
+    position: absolute;
+    width: fit-content;
+    left: 16%;
+    right: 50%;
+}
+
+.gate .current {
+    display: block;
+}
+
+.gate .row input,
+.gate .row label {
+    margin-top: 10px;
+    margin-bottom: 40px;
+
+}
+
+.gate .row input {
+    width: 103px;
+    padding: 3px;
+    border: 2px solid #7f7fff;
+    outline: none;
+
+}
+
+.gate .row label {
+    color: #ff6666;
+    font-size: 20px;
+    margin-bottom: 10px;
+
+}
+#rememberme{
+    position: absolute;
+    top:178px;
+    left:170px;
+}
+
+
+
+.gate .error,
+.gate .sucess,
+.gate .auth {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+
+}
+
+
+
+/*  End  gatePage  section    */
+
+/*  Start  addPage  section    */
+
+.add-posts {
+    margin-top: 20px
+}
+
+.add-posts .inner-con{
+    margin-top: 20px;
+
+}
+
+.add-posts .inner-con input[type='file']{
+    display: none;
+}
+
+.add-posts .inner-con input[type="submit"],.add-posts .inner-con label{
+    width:50%;
+    
+}
+.add-posts .inner-con label{
+float: left;
+}
+.add-posts .success, .add-posts .err{
+    margin-top: 30px;
+}
+
+/*  End  addPage  section    */
+
+/*  Start  postsPage  section    */
+
+.posts{
+    margin-top:30px;
+}
+.posts .outer-con{
+    width:50%;
+    margin: 10px auto;
+    background-color:#ededed;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}  
+
+.posts .outer-con .img-con{
+    width:75%;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.posts .outer-con .img-con img{
+    display: block;
+    margin: auto;
+}
+.posts .outer-con .body-con{
+    background-color:#ededed;
+    padding: 10px;
+}
+.posts .outer-con .btn-con .btn-update, .posts .outer-con .btn-con .btn-dele{
+    width: 13%;
+    margin:10px 10px
+}
+.posts .outer-con .btn-con .btn-update{
+    float: left;
+}
+.posts .outer-con .btn-con .btn-dele{
+    float: right;
+}
+/*  End  postsPage  section    */
+
+/* start media query */
+
+
+@media screen and (max-width:767px) {
+
+    .gate {
+        height: 870px;
+        margin-left: 50px;
+    }
+
+    .gate .row input {
+        width: 250px;
+        padding: 3px;
+        border: 2px solid #7f7fff;
+        outline: none;
+        margin-bottom: 10px;
+    }
+
+    .gate input[type="submit"] {
+        position: absolute;
+        right: 153px;
+    }
+
+    #rememberme {
+        position: absolute;
+        top: 218px;
+        left: 46px;
+    }
+
+    .posts .outer-con .btn-con .btn-update, .posts .outer-con .btn-con .btn-dele{
+        width:37%;
+    }
+
+}
+
+
+
+/* End media query */
+
+/*  Start postPage  section    */
+
+.post{
+    background-color: #eaeaea ;
+    display: flex;
+    flex-direction: column;
+}
+.post .img-con{
+    width:100%;
+}
+.post .img-con img{
+    display: block;
+    margin:auto;
+}
+
+.post .body{
+    padding: 20px;
+}
+
+.post .btn-con {
+    width:100%;
+}
+.post .btn-con .btn-update,.post .btn-con .btn-dele{
+    width:25%;
+    margin:20px 10px;
+    display: flex;
+    justify-content: center;
+}    
+
+.post .btn-con .btn-update{
+    float:left;
+}
+
+.post .btn-con .btn-dele{
+    float: right;
+}
+
+/*  End  postPage  section    */
